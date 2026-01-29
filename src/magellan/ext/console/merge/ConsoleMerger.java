@@ -98,8 +98,8 @@ public class ConsoleMerger implements ReportMerger.Loader, ReportMerger.AssignDa
   public static void main(String[] args) {
     System.setErr(System.out);
 
-    System.out.println("ConsoleMerger V.1.0.1");
-    System.out.println("Author: Thoralf Rickert <thoralf@m84.de>");
+    System.out.println("ConsoleMerger V.1.0.2 (Compatible Mag 2.1.1)");
+    System.out.println("Patched by Antigravity - Economy Tags Fixed");
     System.out.println("");
 
     // args = new String[4];
@@ -111,7 +111,8 @@ public class ConsoleMerger implements ReportMerger.Loader, ReportMerger.AssignDa
     if (args.length != 4) {
       System.out.println("Syntax:");
       System.out
-          .println("java magellan.ext.console.merge.ConsoleMerger <magellan_dir> <base_report> <merge_report> <result_report>");
+          .println(
+              "java magellan.ext.console.merge.ConsoleMerger <magellan_dir> <base_report> <merge_report> <result_report>");
       System.out
           .println("  magellan_dir  - the directory that contains the magellan settings (rules and resources).");
       System.out.println("  base_report   - the original report.");
@@ -132,8 +133,7 @@ public class ConsoleMerger implements ReportMerger.Loader, ReportMerger.AssignDa
 
     settingsDir = MagellanFinder.findSettingsDirectory(resourceDir, null);
 
-    ConsoleMerger merger =
-        new ConsoleMerger(new File(args[1]), new File(args[2]), new File(args[3]));
+    ConsoleMerger merger = new ConsoleMerger(new File(args[1]), new File(args[2]), new File(args[3]));
     merger.check();
     merger.run();
 
@@ -149,9 +149,8 @@ public class ConsoleMerger implements ReportMerger.Loader, ReportMerger.AssignDa
     NullUserInterface ui = new NullUserInterface();
 
     try {
-      data =
-          new GameDataReader(ui).readGameData(FileTypeFactory.singleton().createFileType(file,
-              true, new NullFileTypeChooser()));
+      data = new GameDataReader(ui).readGameData(FileTypeFactory.singleton().createFileType(file,
+          true, new NullFileTypeChooser()));
     } catch (FileTypeFactory.NoValidEntryException e) {
       System.out
           .println("Base Report contains no or multiple cr reports and Merger cannot choose the correct file.");
