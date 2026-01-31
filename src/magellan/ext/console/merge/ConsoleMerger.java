@@ -68,6 +68,7 @@ public class ConsoleMerger implements ReportMerger.Loader, ReportMerger.AssignDa
       return;
     }
     System.out.println("Loaded succesfully with encoding: " + base.getEncoding());
+    printStats("BASE REPORT STATS", base);
 
     System.out.println("Merge Report: " + mergeReport);
     ReportMerger merger = new ReportMerger(base, mergeReport, this, this);
@@ -77,6 +78,7 @@ public class ConsoleMerger implements ReportMerger.Loader, ReportMerger.AssignDa
       System.exit(2);
       return;
     }
+    printStats("MERGED RESULT STATS", merged);
 
     try {
       System.out.println("Save Report to " + resultReport);
@@ -91,6 +93,20 @@ public class ConsoleMerger implements ReportMerger.Loader, ReportMerger.AssignDa
     }
   }
 
+  private void printStats(String title, GameData data) {
+    if (data == null)
+      return;
+    System.out.println("--------------------------------------------------");
+    System.out.println(" " + title);
+    System.out.println("--------------------------------------------------");
+    System.out.println("  Regions  : " + (data.getRegions() != null ? data.getRegions().size() : 0));
+    System.out.println("  Factions : " + (data.getFactions() != null ? data.getFactions().size() : 0));
+    System.out.println("  Units    : " + (data.getUnits() != null ? data.getUnits().size() : 0));
+    // System.out.println(" Turn : " + data.getTurn()); // Turn might not be readily
+    // available in all GameData versions
+    System.out.println("--------------------------------------------------");
+  }
+
   /**
    * Syntax: java magellan.ext.console.merge.ConsoleMerger <magellan_dir>
    * <original_report> <merge_report> <result_report>
@@ -98,8 +114,8 @@ public class ConsoleMerger implements ReportMerger.Loader, ReportMerger.AssignDa
   public static void main(String[] args) {
     System.setErr(System.out);
 
-    System.out.println("ConsoleMerger V.1.0.2 (Compatible Mag 2.1.1)");
-    System.out.println("Patched by Antigravity - Economy Tags Fixed");
+    System.out.println("ConsoleMerger V.1.0.3 (Compatible Mag 2.1.1)");
+    System.out.println("Patched: Message Tags preserved (First-Open Fix)");
     System.out.println("");
 
     // args = new String[4];
@@ -139,6 +155,7 @@ public class ConsoleMerger implements ReportMerger.Loader, ReportMerger.AssignDa
 
     System.out.println("");
     System.out.println("OK");
+    System.exit(0);
   }
 
   /**

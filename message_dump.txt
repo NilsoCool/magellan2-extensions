@@ -1,0 +1,23 @@
+Compiled from "Message.java"
+public interface magellan.library.Message extends magellan.library.Identifiable {
+  public static final magellan.library.IntegerID ambiguousID;
+  public abstract java.util.Map<java.lang.String, java.lang.String> getAttributes();
+  public abstract void setAttributes(java.util.Map<java.lang.String, java.lang.String>);
+  public abstract java.lang.String getAttribute(java.lang.String);
+  public abstract void setAttribute(java.lang.String, java.lang.String);
+  public abstract java.util.List<java.lang.String> getAttributeKeys();
+  public abstract java.lang.String getText();
+  public abstract void setText(java.lang.String);
+  public abstract magellan.library.rules.MessageType getMessageType();
+  public abstract void setMessageType(magellan.library.rules.MessageType);
+  public abstract void setType(magellan.library.rules.MessageType);
+  public abstract void render(magellan.library.GameData);
+  public abstract int hashCode();
+  public abstract boolean equals(java.lang.Object);
+  public abstract java.lang.String toString();
+  public abstract magellan.library.IntegerID getID();
+  public abstract boolean isAcknowledged();
+  public abstract void setAcknowledged(boolean);
+  public default magellan.library.ID getID();
+  static {};
+}

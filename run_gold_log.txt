@@ -1,0 +1,9 @@
+ConsoleMerger V.1.0.2 (Compatible Mag 2.1.1)
+Patched by Antigravity - Economy Tags Fixed
+
+Load Base Report: E:\PROJET_MAGELLAN\04_TESTS\1433-nifL.cr
+Loaded succesfully with encoding: UTF-8
+Merge Report: E:\PROJET_MAGELLAN\04_TESTS\1433-phiL.cr
+Save Report to E:\PROJET_MAGELLAN\04_TESTS\merged-gold.cr
+
+OK

@@ -1,0 +1,386 @@
+Apache Ant(TM) version 1.10.15 compiled on August 25 2024
+Buildfile: E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\build.consolemerger.xml
+Detected Java version: 17 in: C:\Program Files\Eclipse Adoptium\jdk-17.0.8.7-hotspot
+Detected OS: Windows 11
+parsing buildfile E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\build.consolemerger.xml with URI = file:/E:/PROJET_MAGELLAN/02_CODE/magellan2-extensions-fresh/build.consolemerger.xml
+Project base dir set to: E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh
+parsing buildfile jar:file:/E:/Tools/lib/ant.jar!/org/apache/tools/ant/antlib.xml with URI = jar:file:/E:/Tools/lib/ant.jar!/org/apache/tools/ant/antlib.xml from a zip file
+Build sequence for target(s) `create-consolemerger' is [create-consolemerger]
+Complete build sequence is [create-consolemerger, clear-classes, ]
+
+create-consolemerger:
+     [echo] Creating console merger...
+     [echo] Using Libs 2.1.1 in E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\libs_2.1.1
+Project base dir set to: E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh
+  [antcall] calling target(s) [clear-classes] in build file E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\build.consolemerger.xml
+parsing buildfile E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\build.consolemerger.xml with URI = file:/E:/PROJET_MAGELLAN/02_CODE/magellan2-extensions-fresh/build.consolemerger.xml
+Project base dir set to: E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh
+Override ignored for property "sources"
+Override ignored for property "classes"
+Override ignored for property "library"
+Override ignored for property "release"
+Override ignored for property "debug"
+Override ignored for property "optimize"
+Override ignored for property "build.compiler"
+Override ignored for property "compile.source"
+Override ignored for property "compile.target"
+Override ignored for property "compile.encoding"
+Build sequence for target(s) `clear-classes' is [clear-classes]
+Complete build sequence is [clear-classes, create-consolemerger, ]
+  [antcall] Entering E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\build.consolemerger.xml...
+Build sequence for target(s) `clear-classes' is [clear-classes]
+Complete build sequence is [clear-classes, create-consolemerger, ]
+
+clear-classes:
+     [echo] Cleaning output folder
+    [mkdir] Skipping E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes because it already exists.
+   [delete] Deleting E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes
+  [antcall] Exiting E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\build.consolemerger.xml.
+    [mkdir] Created dir: E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes
+    [javac] E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\build.consolemerger.xml:47: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] magellan\client\utils\MagellanFinder.java added as magellan\client\utils\MagellanFinder.class doesn't exist.
+    [javac] magellan\ext\console\merge\ConsoleMerger.java added as magellan\ext\console\merge\ConsoleMerger.class doesn't exist.
+    [javac] magellan\ext\utf2iso\BOMReader.java added as magellan\ext\utf2iso\BOMReader.class doesn't exist.
+    [javac] magellan\ext\utf2iso\ExtensionFileFilter.java added as magellan\ext\utf2iso\ExtensionFileFilter.class doesn't exist.
+    [javac] magellan\ext\utf2iso\Messages.java added as magellan\ext\utf2iso\Messages.class doesn't exist.
+    [javac] magellan\ext\utf2iso\UTF2ISO.java added as magellan\ext\utf2iso\UTF2ISO.class doesn't exist.
+    [javac] E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\src\magellan\ext\utf2iso\messages.properties skipped - don't know how to handle it
+    [javac] magellan\library\io\cr\CRParser.java added as magellan\library\io\cr\CRParser.class doesn't exist.
+    [javac] E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\src\magellan\library\io\cr\CRParser.java.bak skipped - don't know how to handle it
+    [javac] magellan\library\io\cr\CRWriter.java added as magellan\library\io\cr\CRWriter.class doesn't exist.
+    [javac] Compiling 8 source files to E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes
+    [javac] Using modern compiler
+    [javac] Compilation arguments:
+    [javac] '-d'
+    [javac] 'E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes'
+    [javac] '-classpath'
+    [javac] 'E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes;E:\Tools\lib\ant-launcher.jar;E:\Tools\lib\ant-antlr.jar;E:\Tools\lib\ant-apache-bcel.jar;E:\Tools\lib\ant-apache-bsf.jar;E:\Tools\lib\ant-apache-log4j.jar;E:\Tools\lib\ant-apache-oro.jar;E:\Tools\lib\ant-apache-regexp.jar;E:\Tools\lib\ant-apache-resolver.jar;E:\Tools\lib\ant-apache-xalan2.jar;E:\Tools\lib\ant-commons-logging.jar;E:\Tools\lib\ant-commons-net.jar;E:\Tools\lib\ant-imageio.jar;E:\Tools\lib\ant-jai.jar;E:\Tools\lib\ant-jakartamail.jar;E:\Tools\lib\ant-javamail.jar;E:\Tools\lib\ant-jdepend.jar;E:\Tools\lib\ant-jmf.jar;E:\Tools\lib\ant-jsch.jar;E:\Tools\lib\ant-junit.jar;E:\Tools\lib\ant-junit4.jar;E:\Tools\lib\ant-junitlauncher.jar;E:\Tools\lib\ant-netrexx.jar;E:\Tools\lib\ant-swing.jar;E:\Tools\lib\ant-testutil.jar;E:\Tools\lib\ant-xz.jar;E:\Tools\lib\ant.jar;E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\libs_2.1.1\activation.jar;E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\libs_2.1.1\ant-1.7.0.jar;E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\libs_2.1.1\commons-beanutils-core-1.8.3.jar;E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\libs_2.1.1\commons-codec-1.14.jar;E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\libs_2.1.1\commons-email-1.5.jar;E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\libs_2.1.1\commons-httpclient-3.1.jar;E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\libs_2.1.1\commons-logging-1.2.jar;E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\libs_2.1.1\idw-gpl-1.6.1.jar;E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\libs_2.1.1\internal\hamcrest-core-1.3.jar;E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\libs_2.1.1\internal\junit-4.13.jar;E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\libs_2.1.1\jackson-annotations-2.11.0.jar;E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\libs_2.1.1\jackson-core-2.11.0.jar;E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\libs_2.1.1\jackson-databind-2.11.0.jar;E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\libs_2.1.1\javahelp-2.0.05.jar;E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\libs_2.1.1\javax.mail.jar;E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\libs_2.1.1\jfreechart.jar;E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\libs_2.1.1\jimi.jar;E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\libs_2.1.1\macify-1.4.jar;E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\libs_2.1.1\magellan-library.jar;E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\libs_2.1.1\multiline-label-1.18.jar;E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\libs_2.1.1\skins\kunststoff-2_0_2.jar;E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\libs_2.1.1\skins\liquidlnf-2.9.1.jar;E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\libs_2.1.1\skins\looks-1.3b1.jar;E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\libs_2.1.1\skins\skinsCollected.jar;E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\libs_2.1.1\skins\xplookandfeel.jar'
+    [javac] '-sourcepath'
+    [javac] 'E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\src'
+    [javac] '-target'
+    [javac] '1.8'
+    [javac] '-encoding'
+    [javac] 'ISO-8859-1'
+    [javac] '-g'
+    [javac] '-source'
+    [javac] '1.8'
+    [javac] 
+    [javac] The ' characters around the executable and arguments are
+    [javac] not part of the command.
+    [javac] Files to be compiled:
+    [javac]     E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\src\magellan\client\utils\MagellanFinder.java
+    [javac]     E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\src\magellan\ext\console\merge\ConsoleMerger.java
+    [javac]     E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\src\magellan\ext\utf2iso\BOMReader.java
+    [javac]     E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\src\magellan\ext\utf2iso\ExtensionFileFilter.java
+    [javac]     E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\src\magellan\ext\utf2iso\Messages.java
+    [javac]     E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\src\magellan\ext\utf2iso\UTF2ISO.java
+    [javac]     E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\src\magellan\library\io\cr\CRParser.java
+    [javac]     E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\src\magellan\library\io\cr\CRWriter.java
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 8
+    [javac] E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\src\magellan\ext\utf2iso\BOMReader.java:85: warning: [removal] Boolean(boolean) in Boolean has been deprecated and marked for removal
+    [javac] 		return new Boolean(hasBOM);
+    [javac] 		       ^
+    [javac] Note: Some input files use or override a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] 2 warnings
+     [echo] Building JAR file
+      [jar] magellan\client\utils\MagellanFinder.class added as magellan/client/utils/MagellanFinder.class is outdated.
+      [jar] magellan\ext\console\merge\ConsoleMerger.class added as magellan/ext/console/merge/ConsoleMerger.class is outdated.
+      [jar] magellan\ext\console\merge\NullFileTypeChooser.class added as magellan/ext/console/merge/NullFileTypeChooser.class is outdated.
+      [jar] magellan\ext\utf2iso\BOMReader.class added as magellan/ext/utf2iso/BOMReader.class is outdated.
+      [jar] magellan\ext\utf2iso\ExtensionFileFilter.class added as magellan/ext/utf2iso/ExtensionFileFilter.class is outdated.
+      [jar] magellan\ext\utf2iso\Messages.class added as magellan/ext/utf2iso/Messages.class is outdated.
+      [jar] magellan\ext\utf2iso\UTF2ISO$1.class added as magellan/ext/utf2iso/UTF2ISO$1.class is outdated.
+      [jar] magellan\ext\utf2iso\UTF2ISO$MyOptionPanel$MyChooser.class added as magellan/ext/utf2iso/UTF2ISO$MyOptionPanel$MyChooser.class is outdated.
+      [jar] magellan\ext\utf2iso\UTF2ISO$MyOptionPanel.class added as magellan/ext/utf2iso/UTF2ISO$MyOptionPanel.class is outdated.
+      [jar] magellan\ext\utf2iso\UTF2ISO.class added as magellan/ext/utf2iso/UTF2ISO.class is outdated.
+      [jar] magellan\library\io\cr\CRParser$1.class added as magellan/library/io/cr/CRParser$1.class doesn't exist.
+      [jar] magellan\library\io\cr\CRParser$10.class added as magellan/library/io/cr/CRParser$10.class doesn't exist.
+      [jar] magellan\library\io\cr\CRParser$11.class added as magellan/library/io/cr/CRParser$11.class doesn't exist.
+      [jar] magellan\library\io\cr\CRParser$12.class added as magellan/library/io/cr/CRParser$12.class doesn't exist.
+      [jar] magellan\library\io\cr\CRParser$13.class added as magellan/library/io/cr/CRParser$13.class doesn't exist.
+      [jar] magellan\library\io\cr\CRParser$14.class added as magellan/library/io/cr/CRParser$14.class doesn't exist.
+      [jar] magellan\library\io\cr\CRParser$15.class added as magellan/library/io/cr/CRParser$15.class doesn't exist.
+      [jar] magellan\library\io\cr\CRParser$16.class added as magellan/library/io/cr/CRParser$16.class doesn't exist.
+      [jar] magellan\library\io\cr\CRParser$17.class added as magellan/library/io/cr/CRParser$17.class doesn't exist.
+      [jar] magellan\library\io\cr\CRParser$18.class added as magellan/library/io/cr/CRParser$18.class doesn't exist.
+      [jar] magellan\library\io\cr\CRParser$19.class added as magellan/library/io/cr/CRParser$19.class doesn't exist.
+      [jar] magellan\library\io\cr\CRParser$2.class added as magellan/library/io/cr/CRParser$2.class doesn't exist.
+      [jar] magellan\library\io\cr\CRParser$20.class added as magellan/library/io/cr/CRParser$20.class doesn't exist.
+      [jar] magellan\library\io\cr\CRParser$21.class added as magellan/library/io/cr/CRParser$21.class doesn't exist.
+      [jar] magellan\library\io\cr\CRParser$22.class added as magellan/library/io/cr/CRParser$22.class doesn't exist.
+      [jar] magellan\library\io\cr\CRParser$23.class added as magellan/library/io/cr/CRParser$23.class doesn't exist.
+      [jar] magellan\library\io\cr\CRParser$24.class added as magellan/library/io/cr/CRParser$24.class doesn't exist.
+      [jar] magellan\library\io\cr\CRParser$25.class added as magellan/library/io/cr/CRParser$25.class doesn't exist.
+      [jar] magellan\library\io\cr\CRParser$26.class added as magellan/library/io/cr/CRParser$26.class doesn't exist.
+      [jar] magellan\library\io\cr\CRParser$27.class added as magellan/library/io/cr/CRParser$27.class doesn't exist.
+      [jar] magellan\library\io\cr\CRParser$28.class added as magellan/library/io/cr/CRParser$28.class doesn't exist.
+      [jar] magellan\library\io\cr\CRParser$29.class added as magellan/library/io/cr/CRParser$29.class doesn't exist.
+      [jar] magellan\library\io\cr\CRParser$3.class added as magellan/library/io/cr/CRParser$3.class doesn't exist.
+      [jar] magellan\library\io\cr\CRParser$30.class added as magellan/library/io/cr/CRParser$30.class doesn't exist.
+      [jar] magellan\library\io\cr\CRParser$31.class added as magellan/library/io/cr/CRParser$31.class doesn't exist.
+      [jar] magellan\library\io\cr\CRParser$32.class added as magellan/library/io/cr/CRParser$32.class doesn't exist.
+      [jar] magellan\library\io\cr\CRParser$33.class added as magellan/library/io/cr/CRParser$33.class doesn't exist.
+      [jar] magellan\library\io\cr\CRParser$34.class added as magellan/library/io/cr/CRParser$34.class doesn't exist.
+      [jar] magellan\library\io\cr\CRParser$35.class added as magellan/library/io/cr/CRParser$35.class doesn't exist.
+      [jar] magellan\library\io\cr\CRParser$36.class added as magellan/library/io/cr/CRParser$36.class doesn't exist.
+      [jar] magellan\library\io\cr\CRParser$37.class added as magellan/library/io/cr/CRParser$37.class doesn't exist.
+      [jar] magellan\library\io\cr\CRParser$38.class added as magellan/library/io/cr/CRParser$38.class doesn't exist.
+      [jar] magellan\library\io\cr\CRParser$39.class added as magellan/library/io/cr/CRParser$39.class doesn't exist.
+      [jar] magellan\library\io\cr\CRParser$4.class added as magellan/library/io/cr/CRParser$4.class doesn't exist.
+      [jar] magellan\library\io\cr\CRParser$40.class added as magellan/library/io/cr/CRParser$40.class doesn't exist.
+      [jar] magellan\library\io\cr\CRParser$41.class added as magellan/library/io/cr/CRParser$41.class doesn't exist.
+      [jar] magellan\library\io\cr\CRParser$42.class added as magellan/library/io/cr/CRParser$42.class doesn't exist.
+      [jar] magellan\library\io\cr\CRParser$43.class added as magellan/library/io/cr/CRParser$43.class doesn't exist.
+      [jar] magellan\library\io\cr\CRParser$44.class added as magellan/library/io/cr/CRParser$44.class doesn't exist.
+      [jar] magellan\library\io\cr\CRParser$45.class added as magellan/library/io/cr/CRParser$45.class doesn't exist.
+      [jar] magellan\library\io\cr\CRParser$46.class added as magellan/library/io/cr/CRParser$46.class doesn't exist.
+      [jar] magellan\library\io\cr\CRParser$47.class added as magellan/library/io/cr/CRParser$47.class doesn't exist.
+      [jar] magellan\library\io\cr\CRParser$48.class added as magellan/library/io/cr/CRParser$48.class doesn't exist.
+      [jar] magellan\library\io\cr\CRParser$49.class added as magellan/library/io/cr/CRParser$49.class doesn't exist.
+      [jar] magellan\library\io\cr\CRParser$5.class added as magellan/library/io/cr/CRParser$5.class doesn't exist.
+      [jar] magellan\library\io\cr\CRParser$50.class added as magellan/library/io/cr/CRParser$50.class doesn't exist.
+      [jar] magellan\library\io\cr\CRParser$51.class added as magellan/library/io/cr/CRParser$51.class doesn't exist.
+      [jar] magellan\library\io\cr\CRParser$52.class added as magellan/library/io/cr/CRParser$52.class doesn't exist.
+      [jar] magellan\library\io\cr\CRParser$53.class added as magellan/library/io/cr/CRParser$53.class doesn't exist.
+      [jar] magellan\library\io\cr\CRParser$6.class added as magellan/library/io/cr/CRParser$6.class doesn't exist.
+      [jar] magellan\library\io\cr\CRParser$7.class added as magellan/library/io/cr/CRParser$7.class doesn't exist.
+      [jar] magellan\library\io\cr\CRParser$8.class added as magellan/library/io/cr/CRParser$8.class doesn't exist.
+      [jar] magellan\library\io\cr\CRParser$9.class added as magellan/library/io/cr/CRParser$9.class doesn't exist.
+      [jar] magellan\library\io\cr\CRParser$BeanHandler.class added as magellan/library/io/cr/CRParser$BeanHandler.class doesn't exist.
+      [jar] magellan\library\io\cr\CRParser$BeanState.class added as magellan/library/io/cr/CRParser$BeanState.class doesn't exist.
+      [jar] magellan\library\io\cr\CRParser$BlockParser$1.class added as magellan/library/io/cr/CRParser$BlockParser$1.class doesn't exist.
+      [jar] magellan\library\io\cr\CRParser$BlockParser.class added as magellan/library/io/cr/CRParser$BlockParser.class doesn't exist.
+      [jar] magellan\library\io\cr\CRParser$ParseState.class added as magellan/library/io/cr/CRParser$ParseState.class doesn't exist.
+      [jar] magellan\library\io\cr\CRParser$RegionDefaultTagHandler.class added as magellan/library/io/cr/CRParser$RegionDefaultTagHandler.class doesn't exist.
+      [jar] magellan\library\io\cr\CRParser$RegionParseState.class added as magellan/library/io/cr/CRParser$RegionParseState.class doesn't exist.
+      [jar] magellan\library\io\cr\CRParser$RegionTagHandler.class added as magellan/library/io/cr/CRParser$RegionTagHandler.class doesn't exist.
+      [jar] magellan\library\io\cr\CRParser$TagHandler.class added as magellan/library/io/cr/CRParser$TagHandler.class doesn't exist.
+      [jar] magellan\library\io\cr\CRParser$Type.class added as magellan/library/io/cr/CRParser$Type.class doesn't exist.
+      [jar] magellan\library\io\cr\CRParser$UnitDefaultTagHandler.class added as magellan/library/io/cr/CRParser$UnitDefaultTagHandler.class doesn't exist.
+      [jar] magellan\library\io\cr\CRParser$UnitParseState.class added as magellan/library/io/cr/CRParser$UnitParseState.class doesn't exist.
+      [jar] magellan\library\io\cr\CRParser$UnitTagHandler.class added as magellan/library/io/cr/CRParser$UnitTagHandler.class doesn't exist.
+      [jar] magellan\library\io\cr\CRParser.class added as magellan/library/io/cr/CRParser.class doesn't exist.
+      [jar] magellan\library\io\cr\CRWriter$1.class added as magellan/library/io/cr/CRWriter$1.class is outdated.
+      [jar] magellan\library\io\cr\CRWriter.class added as magellan/library/io/cr/CRWriter.class is outdated.
+      [jar] magellan omitted as E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\consolemerger-for2.1.1.jar:magellan/ is up to date.
+      [jar] magellan\client omitted as E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\consolemerger-for2.1.1.jar:magellan/client/ is up to date.
+      [jar] magellan\client\utils omitted as E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\consolemerger-for2.1.1.jar:magellan/client/utils/ is up to date.
+      [jar] magellan\ext omitted as E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\consolemerger-for2.1.1.jar:magellan/ext/ is up to date.
+      [jar] magellan\ext\console omitted as E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\consolemerger-for2.1.1.jar:magellan/ext/console/ is up to date.
+      [jar] magellan\ext\console\merge omitted as E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\consolemerger-for2.1.1.jar:magellan/ext/console/merge/ is up to date.
+      [jar] magellan\ext\utf2iso omitted as E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\consolemerger-for2.1.1.jar:magellan/ext/utf2iso/ is up to date.
+      [jar] magellan\library omitted as E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\consolemerger-for2.1.1.jar:magellan/library/ is up to date.
+      [jar] magellan\library\io omitted as E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\consolemerger-for2.1.1.jar:magellan/library/io/ is up to date.
+      [jar] magellan\library\io\cr omitted as E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\consolemerger-for2.1.1.jar:magellan/library/io/cr/ is up to date.
+      [jar] Building jar: E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\consolemerger-for2.1.1.jar
+      [jar] adding directory META-INF/
+      [jar] adding entry META-INF/MANIFEST.MF
+      [jar] adding directory magellan/
+      [jar] adding directory magellan/client/
+      [jar] adding directory magellan/client/utils/
+      [jar] adding directory magellan/ext/
+      [jar] adding directory magellan/ext/console/
+      [jar] adding directory magellan/ext/console/merge/
+      [jar] adding directory magellan/ext/utf2iso/
+      [jar] adding directory magellan/library/
+      [jar] adding directory magellan/library/io/
+      [jar] adding directory magellan/library/io/cr/
+      [jar] adding entry magellan/client/utils/MagellanFinder.class
+      [jar] adding entry magellan/ext/console/merge/ConsoleMerger.class
+      [jar] adding entry magellan/ext/console/merge/NullFileTypeChooser.class
+      [jar] adding entry magellan/ext/utf2iso/BOMReader.class
+      [jar] adding entry magellan/ext/utf2iso/ExtensionFileFilter.class
+      [jar] adding entry magellan/ext/utf2iso/Messages.class
+      [jar] adding entry magellan/ext/utf2iso/UTF2ISO$1.class
+      [jar] adding entry magellan/ext/utf2iso/UTF2ISO$MyOptionPanel$MyChooser.class
+      [jar] adding entry magellan/ext/utf2iso/UTF2ISO$MyOptionPanel.class
+      [jar] adding entry magellan/ext/utf2iso/UTF2ISO.class
+      [jar] adding entry magellan/library/io/cr/CRParser$1.class
+      [jar] adding entry magellan/library/io/cr/CRParser$10.class
+      [jar] adding entry magellan/library/io/cr/CRParser$11.class
+      [jar] adding entry magellan/library/io/cr/CRParser$12.class
+      [jar] adding entry magellan/library/io/cr/CRParser$13.class
+      [jar] adding entry magellan/library/io/cr/CRParser$14.class
+      [jar] adding entry magellan/library/io/cr/CRParser$15.class
+      [jar] adding entry magellan/library/io/cr/CRParser$16.class
+      [jar] adding entry magellan/library/io/cr/CRParser$17.class
+      [jar] adding entry magellan/library/io/cr/CRParser$18.class
+      [jar] adding entry magellan/library/io/cr/CRParser$19.class
+      [jar] adding entry magellan/library/io/cr/CRParser$2.class
+      [jar] adding entry magellan/library/io/cr/CRParser$20.class
+      [jar] adding entry magellan/library/io/cr/CRParser$21.class
+      [jar] adding entry magellan/library/io/cr/CRParser$22.class
+      [jar] adding entry magellan/library/io/cr/CRParser$23.class
+      [jar] adding entry magellan/library/io/cr/CRParser$24.class
+      [jar] adding entry magellan/library/io/cr/CRParser$25.class
+      [jar] adding entry magellan/library/io/cr/CRParser$26.class
+      [jar] adding entry magellan/library/io/cr/CRParser$27.class
+      [jar] adding entry magellan/library/io/cr/CRParser$28.class
+      [jar] adding entry magellan/library/io/cr/CRParser$29.class
+      [jar] adding entry magellan/library/io/cr/CRParser$3.class
+      [jar] adding entry magellan/library/io/cr/CRParser$30.class
+      [jar] adding entry magellan/library/io/cr/CRParser$31.class
+      [jar] adding entry magellan/library/io/cr/CRParser$32.class
+      [jar] adding entry magellan/library/io/cr/CRParser$33.class
+      [jar] adding entry magellan/library/io/cr/CRParser$34.class
+      [jar] adding entry magellan/library/io/cr/CRParser$35.class
+      [jar] adding entry magellan/library/io/cr/CRParser$36.class
+      [jar] adding entry magellan/library/io/cr/CRParser$37.class
+      [jar] adding entry magellan/library/io/cr/CRParser$38.class
+      [jar] adding entry magellan/library/io/cr/CRParser$39.class
+      [jar] adding entry magellan/library/io/cr/CRParser$4.class
+      [jar] adding entry magellan/library/io/cr/CRParser$40.class
+      [jar] adding entry magellan/library/io/cr/CRParser$41.class
+      [jar] adding entry magellan/library/io/cr/CRParser$42.class
+      [jar] adding entry magellan/library/io/cr/CRParser$43.class
+      [jar] adding entry magellan/library/io/cr/CRParser$44.class
+      [jar] adding entry magellan/library/io/cr/CRParser$45.class
+      [jar] adding entry magellan/library/io/cr/CRParser$46.class
+      [jar] adding entry magellan/library/io/cr/CRParser$47.class
+      [jar] adding entry magellan/library/io/cr/CRParser$48.class
+      [jar] adding entry magellan/library/io/cr/CRParser$49.class
+      [jar] adding entry magellan/library/io/cr/CRParser$5.class
+      [jar] adding entry magellan/library/io/cr/CRParser$50.class
+      [jar] adding entry magellan/library/io/cr/CRParser$51.class
+      [jar] adding entry magellan/library/io/cr/CRParser$52.class
+      [jar] adding entry magellan/library/io/cr/CRParser$53.class
+      [jar] adding entry magellan/library/io/cr/CRParser$6.class
+      [jar] adding entry magellan/library/io/cr/CRParser$7.class
+      [jar] adding entry magellan/library/io/cr/CRParser$8.class
+      [jar] adding entry magellan/library/io/cr/CRParser$9.class
+      [jar] adding entry magellan/library/io/cr/CRParser$BeanHandler.class
+      [jar] adding entry magellan/library/io/cr/CRParser$BeanState.class
+      [jar] adding entry magellan/library/io/cr/CRParser$BlockParser$1.class
+      [jar] adding entry magellan/library/io/cr/CRParser$BlockParser.class
+      [jar] adding entry magellan/library/io/cr/CRParser$ParseState.class
+      [jar] adding entry magellan/library/io/cr/CRParser$RegionDefaultTagHandler.class
+      [jar] adding entry magellan/library/io/cr/CRParser$RegionParseState.class
+      [jar] adding entry magellan/library/io/cr/CRParser$RegionTagHandler.class
+      [jar] adding entry magellan/library/io/cr/CRParser$TagHandler.class
+      [jar] adding entry magellan/library/io/cr/CRParser$Type.class
+      [jar] adding entry magellan/library/io/cr/CRParser$UnitDefaultTagHandler.class
+      [jar] adding entry magellan/library/io/cr/CRParser$UnitParseState.class
+      [jar] adding entry magellan/library/io/cr/CRParser$UnitTagHandler.class
+      [jar] adding entry magellan/library/io/cr/CRParser.class
+      [jar] adding entry magellan/library/io/cr/CRWriter$1.class
+      [jar] adding entry magellan/library/io/cr/CRWriter.class
+      [jar] No Implementation-Title set.No Implementation-Version set.No Implementation-Vendor set.
+      [jar] Location: E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\build.consolemerger.xml:59: 
+Project base dir set to: E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh
+  [antcall] calling target(s) [clear-classes] in build file E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\build.consolemerger.xml
+parsing buildfile E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\build.consolemerger.xml with URI = file:/E:/PROJET_MAGELLAN/02_CODE/magellan2-extensions-fresh/build.consolemerger.xml
+Project base dir set to: E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh
+Override ignored for property "sources"
+Override ignored for property "classes"
+Override ignored for property "library"
+Override ignored for property "release"
+Override ignored for property "debug"
+Override ignored for property "optimize"
+Override ignored for property "build.compiler"
+Override ignored for property "compile.source"
+Override ignored for property "compile.target"
+Override ignored for property "compile.encoding"
+Build sequence for target(s) `clear-classes' is [clear-classes]
+Complete build sequence is [clear-classes, create-consolemerger, ]
+  [antcall] Entering E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\build.consolemerger.xml...
+Build sequence for target(s) `clear-classes' is [clear-classes]
+Complete build sequence is [clear-classes, create-consolemerger, ]
+
+clear-classes:
+     [echo] Cleaning output folder
+    [mkdir] Skipping E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes because it already exists.
+   [delete] Deleting E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes\magellan\client\utils\MagellanFinder.class
+   [delete] Deleting E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes\magellan\ext\console\merge\ConsoleMerger.class
+   [delete] Deleting E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes\magellan\ext\console\merge\NullFileTypeChooser.class
+   [delete] Deleting E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes\magellan\ext\utf2iso\BOMReader.class
+   [delete] Deleting E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes\magellan\ext\utf2iso\ExtensionFileFilter.class
+   [delete] Deleting E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes\magellan\ext\utf2iso\Messages.class
+   [delete] Deleting E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes\magellan\ext\utf2iso\UTF2ISO$1.class
+   [delete] Deleting E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes\magellan\ext\utf2iso\UTF2ISO$MyOptionPanel$MyChooser.class
+   [delete] Deleting E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes\magellan\ext\utf2iso\UTF2ISO$MyOptionPanel.class
+   [delete] Deleting E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes\magellan\ext\utf2iso\UTF2ISO.class
+   [delete] Deleting E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes\magellan\library\io\cr\CRParser$1.class
+   [delete] Deleting E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes\magellan\library\io\cr\CRParser$10.class
+   [delete] Deleting E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes\magellan\library\io\cr\CRParser$11.class
+   [delete] Deleting E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes\magellan\library\io\cr\CRParser$12.class
+   [delete] Deleting E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes\magellan\library\io\cr\CRParser$13.class
+   [delete] Deleting E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes\magellan\library\io\cr\CRParser$14.class
+   [delete] Deleting E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes\magellan\library\io\cr\CRParser$15.class
+   [delete] Deleting E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes\magellan\library\io\cr\CRParser$16.class
+   [delete] Deleting E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes\magellan\library\io\cr\CRParser$17.class
+   [delete] Deleting E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes\magellan\library\io\cr\CRParser$18.class
+   [delete] Deleting E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes\magellan\library\io\cr\CRParser$19.class
+   [delete] Deleting E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes\magellan\library\io\cr\CRParser$2.class
+   [delete] Deleting E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes\magellan\library\io\cr\CRParser$20.class
+   [delete] Deleting E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes\magellan\library\io\cr\CRParser$21.class
+   [delete] Deleting E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes\magellan\library\io\cr\CRParser$22.class
+   [delete] Deleting E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes\magellan\library\io\cr\CRParser$23.class
+   [delete] Deleting E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes\magellan\library\io\cr\CRParser$24.class
+   [delete] Deleting E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes\magellan\library\io\cr\CRParser$25.class
+   [delete] Deleting E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes\magellan\library\io\cr\CRParser$26.class
+   [delete] Deleting E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes\magellan\library\io\cr\CRParser$27.class
+   [delete] Deleting E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes\magellan\library\io\cr\CRParser$28.class
+   [delete] Deleting E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes\magellan\library\io\cr\CRParser$29.class
+   [delete] Deleting E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes\magellan\library\io\cr\CRParser$3.class
+   [delete] Deleting E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes\magellan\library\io\cr\CRParser$30.class
+   [delete] Deleting E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes\magellan\library\io\cr\CRParser$31.class
+   [delete] Deleting E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes\magellan\library\io\cr\CRParser$32.class
+   [delete] Deleting E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes\magellan\library\io\cr\CRParser$33.class
+   [delete] Deleting E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes\magellan\library\io\cr\CRParser$34.class
+   [delete] Deleting E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes\magellan\library\io\cr\CRParser$35.class
+   [delete] Deleting E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes\magellan\library\io\cr\CRParser$36.class
+   [delete] Deleting E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes\magellan\library\io\cr\CRParser$37.class
+   [delete] Deleting E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes\magellan\library\io\cr\CRParser$38.class
+   [delete] Deleting E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes\magellan\library\io\cr\CRParser$39.class
+   [delete] Deleting E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes\magellan\library\io\cr\CRParser$4.class
+   [delete] Deleting E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes\magellan\library\io\cr\CRParser$40.class
+   [delete] Deleting E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes\magellan\library\io\cr\CRParser$41.class
+   [delete] Deleting E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes\magellan\library\io\cr\CRParser$42.class
+   [delete] Deleting E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes\magellan\library\io\cr\CRParser$43.class
+   [delete] Deleting E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes\magellan\library\io\cr\CRParser$44.class
+   [delete] Deleting E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes\magellan\library\io\cr\CRParser$45.class
+   [delete] Deleting E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes\magellan\library\io\cr\CRParser$46.class
+   [delete] Deleting E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes\magellan\library\io\cr\CRParser$47.class
+   [delete] Deleting E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes\magellan\library\io\cr\CRParser$48.class
+   [delete] Deleting E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes\magellan\library\io\cr\CRParser$49.class
+   [delete] Deleting E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes\magellan\library\io\cr\CRParser$5.class
+   [delete] Deleting E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes\magellan\library\io\cr\CRParser$50.class
+   [delete] Deleting E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes\magellan\library\io\cr\CRParser$51.class
+   [delete] Deleting E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes\magellan\library\io\cr\CRParser$52.class
+   [delete] Deleting E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes\magellan\library\io\cr\CRParser$53.class
+   [delete] Deleting E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes\magellan\library\io\cr\CRParser$6.class
+   [delete] Deleting E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes\magellan\library\io\cr\CRParser$7.class
+   [delete] Deleting E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes\magellan\library\io\cr\CRParser$8.class
+   [delete] Deleting E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes\magellan\library\io\cr\CRParser$9.class
+   [delete] Deleting E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes\magellan\library\io\cr\CRParser$BeanHandler.class
+   [delete] Deleting E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes\magellan\library\io\cr\CRParser$BeanState.class
+   [delete] Deleting E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes\magellan\library\io\cr\CRParser$BlockParser$1.class
+   [delete] Deleting E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes\magellan\library\io\cr\CRParser$BlockParser.class
+   [delete] Deleting E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes\magellan\library\io\cr\CRParser$ParseState.class
+   [delete] Deleting E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes\magellan\library\io\cr\CRParser$RegionDefaultTagHandler.class
+   [delete] Deleting E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes\magellan\library\io\cr\CRParser$RegionParseState.class
+   [delete] Deleting E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes\magellan\library\io\cr\CRParser$RegionTagHandler.class
+   [delete] Deleting E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes\magellan\library\io\cr\CRParser$TagHandler.class
+   [delete] Deleting E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes\magellan\library\io\cr\CRParser$Type.class
+   [delete] Deleting E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes\magellan\library\io\cr\CRParser$UnitDefaultTagHandler.class
+   [delete] Deleting E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes\magellan\library\io\cr\CRParser$UnitParseState.class
+   [delete] Deleting E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes\magellan\library\io\cr\CRParser$UnitTagHandler.class
+   [delete] Deleting E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes\magellan\library\io\cr\CRParser.class
+   [delete] Deleting E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes\magellan\library\io\cr\CRWriter$1.class
+   [delete] Deleting E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes\magellan\library\io\cr\CRWriter.class
+   [delete] Deleting E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes\magellan\library\io\cr
+   [delete] Deleting E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes\magellan\library\io
+   [delete] Deleting E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes\magellan\library
+   [delete] Deleting E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes\magellan\ext\utf2iso
+   [delete] Deleting E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes\magellan\ext\console\merge
+   [delete] Deleting E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes\magellan\ext\console
+   [delete] Deleting E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes\magellan\ext
+   [delete] Deleting E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes\magellan\client\utils
+   [delete] Deleting E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes\magellan\client
+   [delete] Deleting E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes\magellan
+   [delete] Deleting E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes
+  [antcall] Exiting E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\build.consolemerger.xml.
+
+BUILD SUCCESSFUL
+Total time: 2 seconds

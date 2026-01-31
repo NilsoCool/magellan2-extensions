@@ -1,0 +1,25 @@
+Buildfile: E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\build.consolemerger.xml
+
+create-consolemerger:
+     [echo] Creating console merger...
+     [echo] Using Libs 2.1.1 in E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\libs_2.1.1
+
+clear-classes:
+     [echo] Cleaning output folder
+    [mkdir] Created dir: E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes
+    [mkdir] Created dir: E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes
+    [javac] E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\build.consolemerger.xml:47: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 6 source files to E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\classes
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 8
+    [javac] E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\src\magellan\ext\utf2iso\BOMReader.java:85: warning: [removal] Boolean(boolean) in Boolean has been deprecated and marked for removal
+    [javac] 		return new Boolean(hasBOM);
+    [javac] 		       ^
+    [javac] 2 warnings
+     [echo] Building JAR file
+      [jar] Building jar: E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh\consolemerger.jar
+
+clear-classes:
+     [echo] Cleaning output folder
+
+BUILD SUCCESSFUL
+Total time: 1 second

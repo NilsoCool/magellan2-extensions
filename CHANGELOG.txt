@@ -1,0 +1,17 @@
+MAGELAN EXTENSIONS - CONSOLEMERGER - CHANGELOG
+==============================================
+
+Version 1.0.3 (31.01.2026)
+--------------------------
+* [FIX] Added System.exit(0) to force clean process termination (critical for automation).
+* [FIX] Corrected "Economy Tags" patch message to "Message Tags preserved".
+* [NEW] Added "Automation Kit": auto_merge.py and run_auto_merge.bat for bulk processing.
+
+Version 1.0.2 (28.01.2026)
+--------------------------
+* [FIX] Restored proper handling of Economy/Battle message tags (fixing the "First Open" bug).
+* [IMP] Improved verbose logging for debugging.
+
+Version 1.0.1
+-------------
+* [IMP] Initial headless support improvements.

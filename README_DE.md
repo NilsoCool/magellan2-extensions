@@ -1,15 +1,16 @@
 # ConsoleMerger für Magellan 2.1.1
 
-[![Version](https://img.shields.io/badge/version-1.0.2-blue.svg)](https://github.com/yourusername/consolemerger)
+[![Version](https://img.shields.io/badge/version-1.0.3-blue.svg)](https://github.com/yourusername/consolemerger)
 [![Java](https://img.shields.io/badge/java-11%2B-orange.svg)](https://www.oracle.com/java/technologies/javase-jre11-downloads.html)
 [![Magellan](https://img.shields.io/badge/magellan-2.1.1-green.svg)](https://github.com/Magellan2/Magellan2)
 
 Automatisiertes Report-Merge-Tool für Magellan 2.1.1 / Eressea mit Headless-Unterstützung.
 
-## Neu in v1.0.2
+## Neu in v1.0.3
 
-- ✅ **Nachrichten-Tags wiederhergestellt** - Farbklassifizierung (Wirtschaft/Kampf) bleibt erhalten
-- ✅ **Moderne Regeln** - Aktualisiert für Eressea-Mechaniken (Boote, Dämonen, Konvois)
+- ✅ **Nachrichten-Tags wiederhergestellt** - Farbklassifizierung (Wirtschaft/Kampf) bleibt erhalten (Fix für erstes Öffnen).
+- ✅ **Prozess-Exit Fix** - Beendet sich jetzt sauber mit `System.exit(0)` für bessere Automatisierung.
+- ✅ **Automation Kit** - Python-Skripte für Massenverarbeitung enthalten.
 - ⚠️ **Hinweis**: Magellan-Client entfernt Farbtags beim Speichern - Datei als Master-Kopie behalten
 
 ## Anforderungen
@@ -54,22 +55,10 @@ java -cp "bin/consolemerger-for2.1.1.jar:bin/lib/*" magellan.ext.console.merge.C
 
 2. Alle Magellan 2.1.1 Bibliotheks-JARs in `bin/lib/` platzieren
 
-## Python-Integration
+## Automation Kit (Neu!)
 
-```python
-import subprocess
-import os
-
-def merge_reports(basis, zug, ausgabe):
-    sep = ";" if os.name == "nt" else ":"
-    cp = f"bin/consolemerger-for2.1.1.jar{sep}bin/lib/*"
-    
-    subprocess.run([
-        "java", "-cp", cp,
-        "magellan.ext.console.merge.ConsoleMerger",
-        "magellan_context", basis, zug, ausgabe
-    ], check=True)
-```
+Wir stellen jetzt ein robustes Python-Automatisierungs-Kit für Massenverarbeitung bereit.
+Siehe Verzeichnis [`automation_kit/`](automation_kit/) für Skripte und Anleitungen.
 
 ## Fehlerbehebung
 
