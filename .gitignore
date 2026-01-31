@@ -1,0 +1,25 @@
+# Eclipse
+.classpath
+.project
+.settings/
+
+# Output
+bin/
+classes/
+
+# Logs
+*.log
+*.txt
+dev_logs_archive/
+
+# Binaries (Allow release JARs)
+*.jar
+!release/*.jar
+!libs_2.1.1/*.jar
+!libs_2.1.1/**/*.jar
+
+# Temp
+input/
+output/
+logs/
+temp/
