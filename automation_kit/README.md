@@ -15,18 +15,7 @@ This kit provides a robust, Python-based automation solution for merging multipl
 
 ## Setup
 
-1.  Create a folder (e.g., `merger_env`) and place this kit inside.
-2.  Ensure you have the following folder structure:
-    ```
-    merger_env/
-    ├── consolemerger-for2.1.1.jar
-    ├── lib/                  # Contains all dependent JARs (magellan-library, etc.)
-    ├── input/                # Place your .cr files here
-    ├── output/               # Results will appear here
-    ├── logs/                 # Execution logs
-    ├── auto_merge.py
-    └── run_auto_merge.bat
-    ```
+The JAR is located in `../release/consolemerger-for2.1.1.jar` and libs in `../libs_2.1.1/`. The script handles these paths automatically.
 
 ## Usage
 

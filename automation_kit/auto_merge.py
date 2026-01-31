@@ -14,8 +14,8 @@ INPUT_DIR = os.path.join(ROOT, 'input')
 OUTPUT_DIR = os.path.join(ROOT, 'output')
 TEMP_DIR = os.path.join(ROOT, 'temp') # Isolated Temp Folder
 LOG_DIR = os.path.join(ROOT, 'logs')
-LIB_DIR = os.path.join(ROOT, 'lib')
-JAR_NAME = "consolemerger-for2.1.1.jar"
+LIB_DIR = os.path.join(ROOT, '..', 'libs_2.1.1')
+JAR_PATH = os.path.join(ROOT, '..', 'release', 'consolemerger-for2.1.1.jar')
 
 # ==========================================================
 # LOGGING SETUP
@@ -78,7 +78,7 @@ def main():
         input("Press Enter to exit...")
         sys.exit(1)
 
-    classpath_jars = [os.path.join(ROOT, JAR_NAME)] + glob.glob(os.path.join(LIB_DIR, "*.jar"))
+    classpath_jars = [os.path.abspath(JAR_PATH)] + glob.glob(os.path.join(LIB_DIR, "*.jar"))
     classpath = ";".join(classpath_jars)
 
     # 5. Merge Loop
@@ -104,7 +104,7 @@ def main():
                 "java", 
                 "-cp", classpath,
                 "magellan.ext.console.merge.ConsoleMerger",
-                ".",
+                os.path.abspath(os.path.join(ROOT, '..')),
                 current_base,
                 file_path,
                 temp_merged
