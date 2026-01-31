@@ -1,37 +1,31 @@
-# Project Hibernation Memo: Magellan 2 Extensions (ConsoleMerger)
+# PROJECT HIBERNATION MEMO
 
-**Date**: 2026-01-29
-**Status**: STABLE (V.1.0.2)
-**Branch**: `master` (Synced with Origin)
+**Status:** HIBERNATED / RELEASED (v1.0.3)
+**Date:** 31 Jan 2026
 
----
+This project ("Magellan 2 Extensions") is currently stable and released.
+The key component is `ConsoleMerger`, an automated report merger for Magellan/Eressea.
 
-## 🛑 Where We Stopped
-The project has been successfully patched, documented, and released. The "ConsoleMerger" is now fully functional for automated headless use.
-
-### ✅ Accomplishments
-1.  **Color Tags Restored**: The core issue of missing `economy`/`battle` tags in `.cr` files was fixed by patching `CRParser.java` to explicitly store the `section` attribute.
-2.  **Clean Compilation**: A dedicated `build.consolemerger.xml` produces a compliant `consolemerger-for2.1.1.jar` (~8MB Fat Jar).
-3.  **Documentation**: Created `README_AUTOMATION.md` (Bilingual EN/DE) for integration teams.
-4.  **Release**: Version V.1.0.2 was tagged and pushed to GitHub.
-
-### ⚠️ Known Minor Issues (Non-Blocking)
-*   **Unit Count Header**: The `max_units` (or `Anzahl Einheiten`) in the header might show 2500 (default) instead of the actual number of units written.
-    *   *Status*: Investigated but deferred. Does not affect game logic or parsing.
-    *   *Fix Strategy*: Use `RandomAccessFile` to overwrite the header post-write if strictly necessary.
-
----
+## 📂 Key Locations
+*   **Source Code:** `src/magellan/ext/console/merge/`
+*   **Production JAR:** `release/consolemerger-for2.1.1.jar`
+*   **Automation Kit:** `automation_kit/` (Python scripts + batch launcher)
 
 ## 🚀 How to Resume
-1.  **Environment**: Requires JDK 8 for build, JRE 11+ for execution.
-2.  **Repo Path**: `E:\PROJET_MAGELLAN\02_CODE\magellan2-extensions-fresh`
-3.  **Build Command**: `ant -f build.consolemerger.xml create-consolemerger`
-4.  **Test Command**: `Run_Test.bat` (in `04_TESTS` folder)
+To restart development or apply a new update:
 
-## 📂 Key Files
-*   `src/magellan/library/io/cr/CRParser.java`: Contains the critical patch for attributes.
-*   `src/magellan/ext/console/merge/ConsoleMerger.java`: Logic for headless execution.
-*   `README_AUTOMATION.md`: Integration guide.
+1.  **Git Pull:** Ensure you have the latest version.
+    ```bash
+    git pull origin master
+    ```
+2.  **Edit Code:** Modify Java files in `src/`.
+3.  **Build:** Use Ant to compile.
+    ```bash
+    ant -f build.consolemerger.xml create-consolemerger
+    ```
+4.  **Test:** Use the `test-prod` folder (external to git) or create a new test env using `automation_kit`.
+5.  **Release:** Copy the new JAR to `release/` and update `CHANGELOG.txt`.
 
----
-*Memo created by Magellan AI Assistant before archiving context.*
+## 📦 For New Installations
+Simply use the content of `automation_kit/` and `release/` on any machine with Java 11+ and Python 3.x.
+See `README.md` for details.
