@@ -1,0 +1,41 @@
+# --- USER DATA (Ne jamais envoyer sur GitHub) ---
+etc/
+rules/
+input/
+output/
+logs/
+*.cr
+*.rep
+*.map
+*.log
+*.tmp
+
+# --- LOCAL MANAGEMENT (Do not push) ---
+run_test.bat
+PUBLISH_RELEASE.bat
+PROJECT_HIBERNATION_MEMO.md
+
+# --- IDE & SYSTEM ---
+.settings/
+.classpath
+.project
+bin/
+dist/
+build/
+Thumbs.db
+.DS_Store
+
+# --- AUTOMATION KIT GENERATED ---
+# On ignore tout ce que le setup copie, sauf les scripts originaux
+automation_kit/lib/
+automation_kit/etc/
+automation_kit/rules/
+automation_kit/input/
+automation_kit/output/
+automation_kit/logs/
+automation_kit/*.jar
+
+# --- EXCEPTIONS (On garde les scripts) ---
+!automation_kit/*.py
+!automation_kit/*.bat
+!automation_kit/*.md

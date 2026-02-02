@@ -1,0 +1,84 @@
+<project name="console-merger">
+  <description>
+    This is the ant script for creating the console based
+  	report merger. You need to setup some paths if you
+  	want to use this script to compile a JAR file.
+  </description>
+
+  <!-- Some properties -->
+  <property name="sources"      location="${basedir}/src"/>
+  <property name="classes"      location="${basedir}/classes"/>
+  <property name="library"      location="${basedir}/libs_2.1.1"/>
+  <property name="release"      location="${basedir}/release"/>
+
+  <!-- Compile Settings -->
+  <property name="debug"             value="on" />
+  <property name="optimize"          value="off" />
+  <property name="build.compiler"    value="modern"/>
+  <property name="compile.source"    value="1.8"/>
+  <property name="compile.target"    value="1.8"/>
+  <property name="compile.encoding"  value="ISO-8859-1"/>
+
+
+  <path id="merger.class.path">
+    <pathelement path="${java.class.path}/" />
+    <fileset dir="${library}"><include name="**/*.jar" /></fileset>
+  </path>
+	
+  <!-- *************************************************************** -->
+  <!-- *                                                             * -->
+  <!-- *  This target compiles and packs the console merger          * -->
+  <!-- *                                                             * -->
+  <!-- *************************************************************** -->
+  <target name="create-consolemerger" description="Run this to create a jar for the console merger">
+    <echo message="Creating console merger..." />
+  	<echo message="Using Libs 2.1.1 in ${library}"/>
+
+    <antcall target="clear-classes"/>
+    <mkdir dir="${classes}" />
+  	
+    <javac srcdir="${sources}"
+           destdir="${classes}"
+           includes="magellan/**"
+           source="${compile.source}"
+           target="${compile.target}"
+           encoding="${compile.encoding}"
+           optimize="${optimize}"
+           debug="${debug}">
+      <classpath refid="merger.class.path"/>
+    </javac>
+  	
+    <!--
+    <delete includeEmptyDirs="true" failonerror="false">
+      <fileset dir="${classes}/magellan/library" includes="**" />
+    </delete>
+  	-->
+    <echo message="Building JAR file" />
+  	
+    <!-- JAR File erzeugen -->
+    <jar jarfile="consolemerger-for2.1.1.jar" basedir="${classes}">
+      <manifest>
+        <attribute name="Built-By" value="${user.name}" />
+        <attribute name="Specification-Title" value="Magellan Console Merger" />
+        <attribute name="Specification-Vendor" value="Thoralf Rickert"/>
+        <attribute name="Main-Class" value="magellan.ext.console.merge.ConsoleMerger"/>
+        <attribute name="Class-Path" value="consolemerger.jar lib/ant-1.5.3.jar lib/commons-codec-1.3.jar"/>
+      </manifest>
+    </jar>
+  	
+    <antcall target="clear-classes"/>
+  </target>
+	
+
+  <!-- *************************************************************** -->
+  <!-- *                                                             * -->
+  <!-- *************************************************************** -->
+  <target name="clear-classes">
+  	<!-- cleaning classes directory by creating&deleting and creating it -->
+    <echo message="Cleaning output folder"/>
+    <mkdir dir="${classes}" />
+    <delete includeEmptyDirs="true" failonerror="false">
+      <fileset dir="${classes}" includes="**" />
+    </delete>
+  </target>
+</project>
